@@ -19,7 +19,7 @@ steps:
     args:
       - run
       - --filename=app.yaml
-      - --image=gcr.io/$PROJECT_ID/stedi-matthew-b:$SHORT_SHA
+      - --image=gcr.io/$PROJECT_ID/stedi-matthew-b:latest
       - --location=us-central1-c
       - --cluster=cluster-1
 
@@ -42,6 +42,3 @@ steps:
       - submit
       - --config
       - Cloud-build-prod.yaml
-      - --substitutions
-      - SHORT_SHA='$SHORT_SHA'
-      - .      
