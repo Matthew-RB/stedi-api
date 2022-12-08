@@ -89,6 +89,7 @@ spec:
       name: stedi-nodeport-matthew
       port:
         number: 80
+
 ---
 apiVersion: networking.gke.io/v1
 kind: ManagedCertificate
