@@ -77,7 +77,7 @@ steps:
       - builds
       - submit
       - --config
-      - cloud-build-test.yaml
+      - Cloud-build-test.yaml
       - --substitutions
       - _SHORT_SHA=$SHORT_SHA
       - .
