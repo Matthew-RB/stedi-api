@@ -38,10 +38,10 @@ steps:
 # This step deploys the stage application in Kubernetes
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
-    - builds
-    - submit
-    - --config
-    - Cloud-build-prod.yaml
-    - --substitutions
-    - _SHORT_SHA=$SHORT_SHA
-    - .      
+      - builds
+      - submit
+      - --config
+      - Cloud-build-prod.yaml
+      - --substitutions
+      - _SHORT_SHA=$SHORT_SHA
+      - .      
